@@ -1,0 +1,10 @@
+node_modules
+.next
+.git
+.claude
+.codegraph
+*.md
+!README.md
+.env*
+.vercel
+coverage

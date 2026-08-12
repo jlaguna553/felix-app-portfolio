@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sin conexión — Doña Félix</title>
+  <style>
+    body { font-family: system-ui, sans-serif; display: flex; align-items: center;
+           justify-content: center; min-height: 100svh; margin: 0; background: #fafaf9; }
+    .card { text-align: center; padding: 2rem; }
+    h1 { font-size: 1.25rem; color: #1c1917; margin-bottom: 0.5rem; }
+    p  { color: #78716c; font-size: 0.9rem; }
+    button { margin-top: 1.5rem; padding: 0.6rem 1.4rem; background: #b45309;
+             color: white; border: none; border-radius: 0.75rem; font-size: 0.9rem;
+             cursor: pointer; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Sin conexión</h1>
+    <p>Revisa tu red e intenta de nuevo.</p>
+    <button onclick="location.reload()">Reintentar</button>
+  </div>
+</body>
+</html>

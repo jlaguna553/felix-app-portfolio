@@ -1,0 +1,46 @@
+{
+  "project_name": "Doña Félix POS",
+  "language": "TypeScript",
+  "framework": "Next.js",
+  "source_directories": [
+    "src/app/api",
+    "src/lib/utils",
+    "src/lib/ai",
+    "src/components/pos",
+    "src/components/admin"
+  ],
+  "custom_patterns": [
+    "**/route.ts",
+    "**/*.ts",
+    "**/*Manager.tsx",
+    "**/*Module.tsx",
+    "**/*Screen.tsx",
+    "**/*Display.tsx",
+    "**/*Client.tsx",
+    "**/*Table.tsx",
+    "**/*Form.tsx",
+    "**/*Plan.tsx",
+    "**/*Report.tsx"
+  ],
+  "exclude_patterns": [
+    "**/__tests__/**",
+    "**/*.test.ts",
+    "**/*.spec.ts",
+    "**/types.ts",
+    "**/types/index.ts",
+    "**/index.ts",
+    "**/providers/**",
+    "**/client.ts",
+    "**/server.ts"
+  ],
+  "ollama": {
+    "model": "qwen2.5-coder:7b",
+    "endpoint": "http://localhost:11434",
+    "timeout_ms": 300000,
+    "delay_between_ms": 2000,
+    "retry_attempts": 2
+  },
+  "sdk": {
+    "port": 9000
+  }
+}
